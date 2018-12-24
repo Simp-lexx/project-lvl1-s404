@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/usr/bin/env node
 
-echo Welcome to the Brain Games!
+console.log('Welcome to the Brain Games!');
