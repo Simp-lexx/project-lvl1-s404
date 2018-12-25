@@ -1,7 +1,7 @@
 {
   "name": "bg-simp-lexx",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Add read name from user with readline-sync library",
   "main": "brain-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
