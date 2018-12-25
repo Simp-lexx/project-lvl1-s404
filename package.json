@@ -18,7 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
-    "npm": "^6.5.0"
+    "npm": "^6.5.0",
+    "readline-sync": "^1.4.9"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
