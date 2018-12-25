@@ -15,7 +15,11 @@
   },
   "author": "Alexey Kovalenko",
   "license": "ISC",
-  "keywords": ["game", "brain", "brain game"],
+  "keywords": [
+    "game",
+    "brain",
+    "brain game"
+  ],
   "dependencies": {
     "readline-sync": "^1.4.9"
   },
