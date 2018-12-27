@@ -3,6 +3,6 @@ import hi from '..';
 
 const welcome = () => console.log('Welcome to the Brain Games!');
 
-hi();
+// hi();
 
 export default welcome;

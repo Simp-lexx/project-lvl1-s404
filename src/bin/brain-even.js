@@ -17,13 +17,13 @@ const brainEven = (name, num) => {
     if (acc === 0) {
       console.log(`Congratulations, ${name}!`);
     } else if (youAnswer !== myAnswer) {
-      console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${myAnswer}'.\n
-      Let's try again, ${name}!`);
+      console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${myAnswer}'.
+    Let's try again, ${name}!`);
     } else {
       console.log('Correct!');
       acc -= 1;
+      return iter(randInt(), acc);
     }
-    return iter(randInt, acc);
   };
   return iter(num, counter);
 };
