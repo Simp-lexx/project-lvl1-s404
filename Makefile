@@ -5,4 +5,4 @@ start:
 publish:
 	npm publish
 lint:
-	npx eslint /home/lexx/jscode/proj-one/src
+	npx eslint .
