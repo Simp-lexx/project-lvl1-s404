@@ -5,6 +5,7 @@ import welcome from './brain-games';
 
 const rule = () => console.log('Answer "yes" if number even otherwise answer "no".');
 const randInt = () => Math.floor(Math.random() * 20) + 1;
+// let ran = randInt();
 
 const brainEven = (name, num) => {
   console.log(`Question: ${num}`);
@@ -29,6 +30,5 @@ const brainEven = (name, num) => {
 
 welcome();
 rule();
-hi();
 const name = hi();
-brainEven(name, randInt);
+brainEven(name, randInt());
