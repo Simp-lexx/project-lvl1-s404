@@ -3,32 +3,30 @@ import hi from '..';
 import readlineSync from 'readline-sync';
 import welcome from './brain-games';
 
+
 const rule = () => console.log('Answer "yes" if number even otherwise answer "no".');
 const randInt = () => Math.floor(Math.random() * 20) + 1;
 // let ran = randInt();
+welcome();
+rule();
 
-const brainEven = (name, num) => {
+const name = hi();
+const brainEven = (num, counter) => {
   console.log(`Question: ${num}`);
   const myAnswer = (num % 2 === 0) ? 'yes' : 'no';
   const youAnswer = readlineSync.question('Your answer: ');
-  const counter = 3;
-  const iter = (n, count) => {
-    let acc = count;
-    if (acc === 0) {
-      console.log(`Congratulations, ${name}!`);
-    } else if (youAnswer !== myAnswer) {
-      console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${myAnswer}'.
-    Let's try again, ${name}!`);
-    } else {
+  // let counter = 3;
+  if (youAnswer === myAnswer) {
+    if (counter > 1) {
       console.log('Correct!');
-      acc -= 1;
-      return iter(randInt(), acc);
+      return brainEven(randInt(), counter - 1);
     }
-  };
-  return iter(num, counter);
+    console.log(`Congratulations, ${name}!`);
+    // return counter;
+  } else {
+    console.log(`'${youAnswer}' is wrong answer ;(. Correct answer was '${myAnswer}'.
+Let's try again, ${name}!`);
+  }
+  return counter;
 };
-
-welcome();
-rule();
-const name = hi();
-brainEven(name, randInt());
+brainEven(randInt(), 3);

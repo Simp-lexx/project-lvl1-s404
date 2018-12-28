@@ -12,7 +12,7 @@
   ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/bain-even.js"
+    "brain-even": "dist/bin/brain-even.js"
   },
   "author": "Alexey Kovalenko",
   "license": "ISC",
