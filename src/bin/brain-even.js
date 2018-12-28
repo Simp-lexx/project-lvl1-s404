@@ -3,14 +3,13 @@ import hi from '..';
 import readlineSync from 'readline-sync';
 import welcome from './brain-games';
 
-
 const rule = () => console.log('Answer "yes" if number even otherwise answer "no".');
 const randInt = () => Math.floor(Math.random() * 20) + 1;
-// let ran = randInt();
+
 welcome();
 rule();
-
 const name = hi();
+
 const brainEven = (num, counter) => {
   console.log(`Question: ${num}`);
   const myAnswer = (num % 2 === 0) ? 'yes' : 'no';
@@ -29,4 +28,5 @@ Let's try again, ${name}!`);
   }
   return counter;
 };
+
 brainEven(randInt(), 3);
