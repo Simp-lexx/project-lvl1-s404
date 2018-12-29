@@ -5,4 +5,4 @@
 
 This my first training project in JS
 
-[![asciicast](https://asciinema.org/a/xCbXv35vJId2Ts67gtoeeG9p4.svg)](https://asciinema.org/a/xCbXv35vJId2Ts67gtoeeG9p4)
+[![asciicast](https://asciinema.org/a/1Vcd4LS9kSDl7kfvT4DDoMZlG.svg)](https://asciinema.org/a/1Vcd4LS9kSDl7kfvT4DDoMZlG)
