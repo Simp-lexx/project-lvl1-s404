@@ -5,4 +5,8 @@
 
 This my first training project in JS
 
-[![asciicast](https://asciinema.org/a/1Vcd4LS9kSDl7kfvT4DDoMZlG.svg)](https://asciinema.org/a/1Vcd4LS9kSDl7kfvT4DDoMZlG)
+Install and play Brain Even Game
+[![asciicast](https://asciinema.org/a/jp8Tysob0fnkC9asQ3Up6d4d8.svg)](https://asciinema.org/a/jp8Tysob0fnkC9asQ3Up6d4d8)
+
+Install and play Brain Calc Game
+[![asciicast](https://asciinema.org/a/MCbgUOT08kiARv5nmy6kOp7tK.svg)](https://asciinema.org/a/MCbgUOT08kiARv5nmy6kOp7tK)
