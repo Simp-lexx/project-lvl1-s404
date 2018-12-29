@@ -10,3 +10,6 @@ Install and play Brain Even Game
 
 Install and play Brain Calc Game
 [![asciicast](https://asciinema.org/a/MCbgUOT08kiARv5nmy6kOp7tK.svg)](https://asciinema.org/a/MCbgUOT08kiARv5nmy6kOp7tK)
+
+Install and play Brain Gcd Game
+[![asciicast](https://asciinema.org/a/cQpSAJDe5ttklUxeidhqtSNwW.svg)](https://asciinema.org/a/cQpSAJDe5ttklUxeidhqtSNwW)
