@@ -1,6 +1,6 @@
 {
   "name": "bg-simp-lexx",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Brain Games",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
