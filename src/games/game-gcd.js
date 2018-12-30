@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 import { cons, car, cdr } from 'hexlet-pairs';
-import welcome from '../bin/brain-games';
-import { hi, randInt } from '..';
+import { randInt } from '../bin/brain-games';
+
+const minRandRange = 1;
+const maxRandRange = 100;
 
 const gcdFind = (pair) => {
   const first = car(pair);
@@ -25,10 +27,8 @@ const brainGcd = (name, counter) => {
     console.log(`Congratulations, ${name}!`);
     return;
   }
-  const min = 1;
-  const max = 100;
-  const a = randInt(min, max);
-  const b = randInt(min, max);
+  const a = randInt(minRandRange, maxRandRange);
+  const b = randInt(minRandRange, maxRandRange);
   const question = cons(a, b);
   const myResult = gcdFind(question);
   const strQuestion = `${car(question)} ${cdr(question)}`;
@@ -44,12 +44,4 @@ Let's try again, ${name}!`);
   }
 };
 
-const startGameGcd = () => {
-  welcome();
-  console.log('Find the greatest common divisor of given numbers.');
-  const name = hi();
-  const counter = 3;
-  return brainGcd(name, counter);
-};
-
-export default startGameGcd;
+export default brainGcd;

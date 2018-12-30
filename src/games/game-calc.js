@@ -1,7 +1,11 @@
 import readlineSync from 'readline-sync';
 import { cons, car, cdr } from 'hexlet-pairs';
-import welcome from '../bin/brain-games';
-import { hi, randInt, randOper } from '..';
+import { randInt } from '../bin/brain-games';
+
+const minRandRange = 5;
+const maxRandRange = 35;
+const minOperRange = 0;
+const maxOperRange = 2;
 
 const operResult = (pair, operator) => {
   const a = car(pair);
@@ -30,12 +34,10 @@ const brainCalc = (name, counter) => {
     console.log(`Congratulations, ${name}!`);
     return;
   }
-  const min = 5;
-  const max = 35;
-  const a = randInt(min, max);
-  const b = randInt(min, max);
+  const a = randInt(minRandRange, maxRandRange);
+  const b = randInt(minRandRange, maxRandRange);
   const question = cons(a, b);
-  const operator = randOper();
+  const operator = randInt(minOperRange, maxOperRange);
   const signOper = strOper(operator);
   const myResult = operResult(question, operator);
   const strQuestion = `${car(question)} ${signOper} ${cdr(question)}`;
@@ -51,12 +53,4 @@ Let's try again, ${name}!`);
   }
 };
 
-const startGameCalc = () => {
-  welcome();
-  console.log('What is the result of the expression?');
-  const name = hi();
-  const counter = 3;
-  return brainCalc(name, counter);
-};
-
-export default startGameCalc;
+export default brainCalc;

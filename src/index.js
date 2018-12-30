@@ -7,5 +7,3 @@ export const hi = () => {
 };
 
 export const randInt = (min, max) => Math.round(Math.random() * (max - min + 1)) + min;
-export const randOper = () => Math.floor(Math.random() * 2);
-export const isEven = num => ((num % 2 === 0) ? 'yes' : 'no');

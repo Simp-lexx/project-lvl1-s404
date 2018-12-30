@@ -1,17 +1,18 @@
 import readlineSync from 'readline-sync';
-import welcome from '../bin/brain-games';
-import { hi, randInt, isEven } from '..';
+import { randInt } from '../bin/brain-games';
+
+const isEven = num => (num % 2 === 0);
+const minRandRange = 5;
+const maxRandRange = 35;
 
 const brainEven = (name, counter) => {
   if (counter === 0) {
     console.log(`Congratulations, ${name}!`);
     return;
   }
-  const min = 5;
-  const max = 35;
-  const question = randInt(min, max);
+  const question = randInt(minRandRange, maxRandRange);
   console.log(`Question: ${question}`);
-  const myAnswer = isEven(question);
+  const myAnswer = isEven(question) ? 'yes' : 'no';
   const youAnswer = readlineSync.question('Your answer: ');
   if (youAnswer === myAnswer) {
     console.log('Correct!');
@@ -23,12 +24,4 @@ Let's try again, ${name}!`);
   }
 };
 
-const startGameEven = () => {
-  welcome();
-  console.log('Answer "yes" if number even otherwise answer "no".');
-  const name = hi();
-  const counter = 3;
-  return brainEven(name, counter);
-};
-
-export default startGameEven;
+export default brainEven;
